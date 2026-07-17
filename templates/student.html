@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+
+<h1>Student Details</h1>
+
+{% if student %}
+
+<p><strong>ID:</strong> {{ student.id }}</p>
+<p><strong>Name:</strong> {{ student.name }}</p>
+<p><strong>Course:</strong> {{ student.course }}</p>
+<p><strong>Email:</strong> {{ student.email }}</p>
+
+{% else %}
+
+<h2>Student not found</h2>
+
+{% endif %}
+
+</body>
+</html>
